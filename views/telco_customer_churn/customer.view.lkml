@@ -1,5 +1,5 @@
 view: customer {
-  sql_table_name: `machine-learning-accelerator.telco_customer_churn.{% parameter dataframe %}` ;;
+  sql_table_name: `cloud-training-demos.bqml_accelerator.telco_customer_churn_{% parameter dataframe %}` ;;
 
   parameter: dataframe {
     type: unquoted
