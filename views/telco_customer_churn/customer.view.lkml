@@ -157,6 +157,7 @@ view: customer {
 
   measure: customer_count {
     type: count
+    drill_fields: [customer_id,state,account_duration_months,area_code,international_plan,voice_mail_plan,total_day_calls,total_night_calls,total_intl_calls,total_service_calls,total_vmail_messages ]
   }
 
   measure: churn_count {
