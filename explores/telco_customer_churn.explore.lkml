@@ -1,5 +1,4 @@
 include: "/views/telco_customer_churn/*.view"
-include: "/views/telco_model_demo_predictions.view"
 
 explore: telco_customer_churn {
   view_name: customer
