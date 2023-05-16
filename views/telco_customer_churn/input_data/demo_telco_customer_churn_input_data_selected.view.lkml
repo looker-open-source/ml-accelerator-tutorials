@@ -219,4 +219,19 @@ view: demo_telco_customer_churn_input_data_selected {
     type: count
     drill_fields: []
   }
+
+
+  measure: total_account_charges {
+    group_label: "Totals"
+    type: number
+    sql: ${total_day_charge} + ${total_eve_charge} + ${total_night_charge} + ${total_intl_charge} ;;
+    value_format_name: usd_0
+  }
+
+  measure: average_account_charges {
+    group_label: "Averages"
+    type: average
+    sql: ${TABLE}.customer_total_day_charge + ${TABLE}.customer_total_eve_charge + ${TABLE}.customer_total_night_charge + ${TABLE}.customer_total_intl_charge ;;
+    value_format_name: usd
+  }
 }

@@ -8,3 +8,4 @@ include: "/dashboards/*.dashboard"
 
 
 include: "/views/telco_customer_churn/prediction/*.explore"
+include: "/views/telco_customer_churn/evaluation/*.view"

@@ -16,8 +16,12 @@ view: demo_telco_customer_churn_predictions {
     sql: ${TABLE}.customer_customer_id ;;
   }
 
+
+
   # hide actual churn dimension as it is not populated for prediction dataframe
   dimension: churn {hidden: yes}
+
+
 
   dimension: predicted_customer_churn {
     view_label: "Predictions"
@@ -79,12 +83,27 @@ view: demo_telco_customer_churn_predictions {
     view_label: "Predictions"
     type: count
     filters: [predicted_customer_churn_using_parameter: "Yes"]
+    drill_fields: [details*]
   }
   measure: predicted_churn_rate {
     view_label: "Predictions"
     type: number
     sql: 1.0*${predicted_churn_count} / NULLIF(${customer_count},0) ;;
     value_format_name: percent_1
+    drill_fields: [details*]
+  }
+
+  measure: avg_probability_of_churn {
+    view_label: "Predictions"
+    label: "Probability of Churn"
+    hidden: no
+    type: average
+    sql: ${probability_of_churn} ;;
+    value_format_name: percent_2
+  }
+
+  set: details {
+    fields: [customer_id,predicted_customer_churn_using_parameter,avg_probability_of_churn, total_account_charges]
   }
 
 }
