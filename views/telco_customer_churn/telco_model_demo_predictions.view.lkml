@@ -1,13 +1,13 @@
-# Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
-explore: telco_model_demo_predictions {
-  hidden: yes
+# # Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
+# explore: telco_model_demo_predictions {
+#   hidden: yes
 
-  join: telco_model_demo_predictions__predicted_customer_churn_probs {
-    view_label: "Telco Model Demo Predictions: Predicted Customer Churn Probs"
-    sql: LEFT JOIN UNNEST(${telco_model_demo_predictions.predicted_customer_churn_probs}) as telco_model_demo_predictions__predicted_customer_churn_probs ;;
-    relationship: one_to_many
-  }
-}
+#   join: telco_model_demo_predictions__predicted_customer_churn_probs {
+#     view_label: "Telco Model Demo Predictions: Predicted Customer Churn Probs"
+#     sql: LEFT JOIN UNNEST(${telco_model_demo_predictions.predicted_customer_churn_probs}) as telco_model_demo_predictions__predicted_customer_churn_probs ;;
+#     relationship: one_to_many
+#   }
+# }
 
 # The name of this view in Looker is "Telco Model Demo Predictions"
 view: telco_model_demo_predictions {
