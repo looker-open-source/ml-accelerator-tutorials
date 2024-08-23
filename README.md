@@ -2,6 +2,8 @@
 
 <h2><span style="color:#2d7eea">Overview</span></h2>
 
+**This is not an officially supported Google product.**
+
 This Looker Block defines Explores based on several BigQuery public datasets and is intended to demonstrate how business analysts can use the **Machine Learning Accelerator** (available for download through [Looker Marketplace](/marketplace/view/bqml-ext)) to access BigQuery and Vertex AI's machine learning capabilities. The data that powers the block is only available in BigQuery and will work with any Looker instance with an existing BigQuery connection.
 
 ><font size = "3"><font color = "red"> <i class='fa fa-exclamation-triangle'></i><b>Note, in order to use these Explores with the Machine Learning Accelerator application, this model must be configured to use the same BigQuery connection as the application.
