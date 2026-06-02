@@ -1,8 +1,8 @@
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 <h1><span style="color:#2d7eea">README - Machine Learning Accelerator Tutorials</span></h1>
 
 <h2><span style="color:#2d7eea">Overview</span></h2>
-
-**This is not an officially supported Google product.**
 
 This Looker Block defines Explores based on several BigQuery public datasets and is intended to demonstrate how business analysts can use the **Machine Learning Accelerator** (available for download through [Looker Marketplace](/marketplace/view/bqml-ext)) to access BigQuery and Vertex AI's machine learning capabilities. The data that powers the block is only available in BigQuery and will work with any Looker instance with an existing BigQuery connection.
 
@@ -18,10 +18,7 @@ To install the ML Accelerator application follow these [installation instruction
 
 Report bugs or feature requests with [this form](https://docs.google.com/forms/d/e/1FAIpQLSd97ptoU3TUuasZeFjSBHT9FQiyrDzjHUm7NTspEjz5kwNSAA/viewform). Contact [ml-accelerator-feedback@google.com](mailto:ml-accelerator-feedback@google.com) with questions or comments.
 
----
-
 ### ML ACCELERATOR TUTORIAL INSTALLATION INSTRUCTIONS
-
 
 #### 1. Installation Options
 
@@ -42,14 +39,9 @@ The Looker Block can be installed directly from [Looker Marketplace](https://mar
 
 To use with the ML Accelerator application, you will need to select the same BigQuery connection used for the application. Only Looker Explores using the same connection as the application will be accessible from within the application.
 
-
----
-
 ### EXPLORES
 
 The following Explores can be used to demonstrate use of the ML Accelerator application.
-
-
 
   | **Explore Name**                  | **Description**                             | **Tutorial** |
   |-----------------|--------------------------------------------|----|
